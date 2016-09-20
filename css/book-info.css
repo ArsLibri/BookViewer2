@@ -1,33 +1,35 @@
-#book-info {
+#book-info-wrapper {
+    margin-top: 64px;
+    text-align: center;
+}
+
+#book-info-image {
     width: 100%;
-    height: 100%;
-    padding: 64px;
-    padding-bottom: 128px;
-    padding-top: 32px;
+    height: 450px;
+    text-align: center;
 }
 
-#book-info-cover {
-    height: 100%;
+#book-info-image-inner {
+    height: 450px;
     display: inline-block;
-}
-
-#book-info-cover-img {
-    height: 100%;
-    width: auto;
+    padding: 32px;
+    border: double 6px #1a1b1c;
+    cursor: pointer;
 }
 
 #book-info-text {
     font-size: 22px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.book-info-field {
     font-family: 'Bold';
-    margin-top: 16px;
+    display: inline-block;
+    max-width: 600px;
+    margin: 32px 0;
 }
 
-.book-info-field>span {
+.book-info-text-field {
+    margin-top: 8px;
+    max-width: 600px;
+}
+
+.book-info-text-field>span {
     font-family: 'Regular';
-    margin-left: 8px;
 }

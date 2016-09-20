@@ -22,13 +22,6 @@ function Resized() {
 		}
 		Olds['WH800+'] = (window.innerHeight >= 800);
 	} else if (ActiveApp == 2) {
-		if (DOMbookinfo.offsetWidth - 64 > 2 * DOMbookinfocover.offsetWidth) {
 
-			DOMbookinfotext.style.width = DOMbookinfo.offsetWidth - DOMbookinfocover.offsetWidth - 192 + 'px';
-			DOMbookinfotext.style.marginLeft = '64px';
-		} else {
-			DOMbookinfotext.style.width = '100%';
-			DOMbookinfotext.style.marginLeft = '0';
-		}
 	}
 }
