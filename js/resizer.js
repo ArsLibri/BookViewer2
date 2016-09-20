@@ -16,9 +16,9 @@ function Resized() {
 		}
 		Olds['WW680+'] = (window.innerWidth >= 680);
 		if (window.innerHeight < 800 && Olds['WH800+'] !== false) {
-			document.getElementById('logo-link').style.display = 'none';
+			document.getElementById('search-wrapper').style.marginTop = '100px';
 		} else if (window.innerHeight >= 800 && Olds['WH800+'] !== true) {
-			document.getElementById('logo-link').style.display = 'block';
+			document.getElementById('search-wrapper').style.marginTop = '300px';
 		}
 		Olds['WH800+'] = (window.innerHeight >= 800);
 	} else if (ActiveApp == 2) {

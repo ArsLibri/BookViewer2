@@ -3,7 +3,7 @@
 
     <head>
         <meta charset='UTF-8'>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>BookViewer v2</title>
         <link rel='stylesheet' type='text/css' href='css/fonts.css'>
         <link rel='stylesheet' type='text/css' href='css/main.css'>
@@ -11,6 +11,7 @@
         <link rel='stylesheet' type='text/css' href='css/top-menu.css'>
         <link rel='stylesheet' type='text/css' href='css/top-menu2.css'>
         <link rel='stylesheet' type='text/css' href='css/book-info.css'>
+        <link rel='stylesheet' type='text/css' href='css/search-results.css'>
         <script src='tweenlite/TweenLite.min.js'></script>
         <script src='tweenlite/plugins/CSSPlugin.min.js'></script>
         <script src='database/books.js'></script>
@@ -39,7 +40,12 @@
             </a>
         </div>
         <div id='app2'>
+            <div id='top-menu2'>
+                <div id='top-menu2-title'>Rezultatele căutării</div>
+            </div>
+            <ul id='search-results'>
 
+            </ul>
         </div>
         <script src='js/variables.js'></script>
         <script src='js/book-finder.js'></script>
