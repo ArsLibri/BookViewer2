@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app1 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    font-family: 'Regular';
+    font-size: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#app2 {
+    position: fixed;
+    left: 100%;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    font-family: 'Regular';
+    font-size: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background-image: url('../res/Logo.png');
+    background-position: center center;
+    background-size: 263px 38px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

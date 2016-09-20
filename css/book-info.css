@@ -1,0 +1,33 @@
+#book-info {
+    width: 100%;
+    height: 100%;
+    padding: 64px;
+    padding-bottom: 128px;
+    padding-top: 32px;
+}
+
+#book-info-cover {
+    height: 100%;
+    display: inline-block;
+}
+
+#book-info-cover-img {
+    height: 100%;
+    width: auto;
+}
+
+#book-info-text {
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.book-info-field {
+    font-family: 'Bold';
+    margin-top: 16px;
+}
+
+.book-info-field>span {
+    font-family: 'Regular';
+    margin-left: 8px;
+}

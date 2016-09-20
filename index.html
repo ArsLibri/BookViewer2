@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BookViewer v2</title>
+        <link rel='stylesheet' type='text/css' href='css/fonts.css'>
+        <link rel='stylesheet' type='text/css' href='css/main.css'>
+        <link rel='stylesheet' type='text/css' href='css/search.css'>
+        <link rel='stylesheet' type='text/css' href='css/top-menu.css'>
+        <link rel='stylesheet' type='text/css' href='css/top-menu2.css'>
+        <link rel='stylesheet' type='text/css' href='css/book-info.css'>
+        <script src='tweenlite/TweenLite.min.js'></script>
+        <script src='tweenlite/plugins/CSSPlugin.min.js'></script>
+        <script src='database/books.js'></script>
+    </head>
+
+    <body>
+        <div id='app1' style='opacity:0;'>
+            <div id='top-menu'>
+                <div id='top-menu-logo'>Editura Ars Libri</div>
+                <div id='top-menu-logo-secondary'>Răsfoiţi cărţile editurii online</div>
+            </div>
+            <div id='search-wrapper'>
+                <div id='search-bar-wrapper'>
+                    <form id='search-bar-form'>
+                        <input type='text' id='search-bar'>
+                    </form>
+                    <div id='search-bar-button'></div>
+                </div>
+                <div id='search-bar-note-wrapper'>
+                    <div id='search-bar-note'>Funcţia de căutare nu suportă titluri parţiale sau chei de căutare pentru moment. Folosiţi titlul complet al cărţii.</div>
+                    <div id='search-bar-result'>The book you searched could not be found.</div>
+                </div>
+            </div>
+            <a id='logo-link' href='http://edituraarslibri.ro'>
+                <div id='logo'></div>
+            </a>
+        </div>
+        <div id='app2'>
+            <div id='top-menu2'>
+                <div id='top-menu2-return'></div>
+                <!--  <div id='top-menu2-title'></div>-->
+            </div>
+            <div id='book-info'>
+                <div id='book-info-cover'><img id='book-info-cover-img'></div>
+                <div id='book-info-text'>
+                    <div class='book-info-field'>Titlu:<span id='book-info-text-title-value'></span></div>
+                    <div class='book-info-field'>Autori:<span id='book-info-text-author-value'></span></div>
+                    <div class='book-info-field'>Preţ:<span id='book-info-text-price-value'></span></div>
+                    <div class='book-info-field'>ISBN:<span id='book-info-text-isbn-value'></span></div>
+                    <div class='book-info-field'>Format:<span id='book-info-text-format-value'></span></div>
+                    <div class='book-info-field'>Pagini:<span id='book-info-text-pages-value'></span></div>
+                    <div class='book-info-field'>Descriere:<span id='book-info-text-description-value'></span></div>
+                </div>
+            </div>
+            <script src='js/variables.js'></script>
+            <script src='js/book-finder.js'></script>
+            <script src='js/animations.js'></script>
+            <script src='js/resizer.js'></script>
+            <script src='js/events.js'></script>
+            <script src='js/ready.js'></script>
+    </body>
+
+</html>
+</body>

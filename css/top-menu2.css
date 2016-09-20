@@ -1,0 +1,31 @@
+#top-menu2 {
+    position: relative;
+    height: 64px;
+    color: #1a1b1c;
+    border-top: solid 3px #1a1b1c;
+}
+
+#top-menu2-title {
+    font-size: 24px;
+    position: absolute;
+    left: 128px;
+    text-align: right;
+    right: 64px;
+    top: 0;
+    bottom: 0;
+    line-height: 64px;
+    height: 64px;
+}
+
+#top-menu2-return {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 64px;
+    width: 64px;
+    background-image: url('../res/ChevLeft.png');
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}

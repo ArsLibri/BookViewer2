@@ -1,0 +1,4 @@
+SetDOMs();
+AddEvents();
+Resized();
+ShowApp();
