@@ -35,3 +35,7 @@ span.app3-details-value {
     border-radius: 15px;
     box-shadow: 7px 7px 12px #4F4F4F;
 }
+
+#app3-reader {
+    display: none;
+}

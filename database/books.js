@@ -26,4 +26,4 @@ var Books = [{
 	'pages': 144,
 	'description': 'Este un auxiliar didactic absolut necesar elevilor de clasa I, pentru formarea și consolidarea deprinderilor de scriere corectă, lizibilă, estetică precum, și a celor de citire conștientă. Conținutul caietului oferă un bogat și variat suport de exersare grafică și de exersare a citirii conștiente, prin exercițiile antrenante care se află pe fiecare pagină. Elaborarea caietului de lucru s-a realizat în strânsă corelație cu programa școlară pentru clasa I și relevă o abordare integrată a tematicii instructiv-educative care pune în valoare comunicarea orală și scrisă pe baza unei arii lărgite de cunoaștere. Stilul de prezentare atractiv, stimulează interesul elevilor și pentru aspectul estetic al scrierii. Caietul de lucru conține fișe aplicative, fișe de recapitulare și evaluare și constituie un sprijin de valoare și pentru cadrele didactice, care doresc să desfășoare o activitate didactică de calitate, caietul oferind și planificarea pe săptămâni a materiei.',
 	'price': 18
-}]
+}];
