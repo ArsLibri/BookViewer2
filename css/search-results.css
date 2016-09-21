@@ -6,6 +6,7 @@
     padding: 8px 32px;
     cursor: pointer;
     transition: all 0.2s;
+    white-space: nowrap;
 }
 
 .search-results-item:hover {
@@ -17,13 +18,16 @@
 }
 
 .search-results-item-text {
-    margin-left: 32px;
+    overflow: hidden;
     vertical-align: top;
+    margin-right: 48px;
+    margin-left: 16px;
 }
 
 .search-results-item-text-title {
     font-family: 'Bold';
     font-size: 22px;
+    white-space: normal;
 }
 
 .search-results-item-text-author {
@@ -31,4 +35,5 @@
     font-size: 16px;
     color: #4F4F4F;
     margin-top: 8px;
+    white-space: normal;
 }

@@ -5,23 +5,48 @@ function ShowApp() {
 }
 
 function SwapToApp2() {
-	ActiveApp = 2;
-	TweenLite.to(DOMapp1, 1, {
-		right: '100%'
-	});
+	if (ActiveApp == 1) {
+		TweenLite.to(DOMapp1, 1, {
+			left: '-100%',
+			right: '100%'
+		});
+	} else if (ActiveApp == 3) {
+		DOMapp3.style.right = '-100%';
+		TweenLite.to(DOMapp3, 1, {
+			left: '100%'
+		});
+	}
+
 	TweenLite.to(DOMapp2, 1, {
-		left: 0,
+		left: '0',
+		right: '0',
 		onComplete: Resized
 	});
+	ActiveApp = 2;
 }
 
 function SwapToApp1() {
-	ActiveApp = 1;
-	TweenLite.to(DOMapp1, 1, {
-		right: 0
-	});
 	TweenLite.to(DOMapp2, 1, {
-		left: '100%',
+		right: '-100%',
+		left: '100%'
+	});
+	TweenLite.to(DOMapp1, 1, {
+		left: '0',
+		right: '0',
 		onComplete: Resized
 	});
+	ActiveApp = 1;
+}
+
+function SwapToApp3() {
+	TweenLite.to(DOMapp2, 1, {
+		left: '-100%',
+		right: '100%'
+	});
+	TweenLite.to(DOMapp3, 1, {
+		left: '0',
+		right: '0',
+		onComplete: Resized
+	});
+	ActiveApp = 3;
 }

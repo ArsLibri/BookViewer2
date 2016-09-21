@@ -1,0 +1,37 @@
+#app3-details-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+#app3-details {
+    width: 100%;
+    max-width: 850px;
+    display: inline-block;
+    font-size: 22px;
+    text-align: left;
+    font-family: 'Bold';
+    position: relative;
+    padding: 64px;
+}
+
+#app3-details> p {
+    margin-bottom: 8px;
+}
+
+span.app3-details-value {
+    font-family: 'Regular';
+}
+
+#app3-details-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: 7px 7px 12px #4F4F4F;
+}

@@ -2,6 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 #app1 {
@@ -17,6 +36,18 @@
 }
 
 #app2 {
+    position: fixed;
+    left: 100%;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    font-family: 'Regular';
+    font-size: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#app3 {
     position: fixed;
     left: 100%;
     width: 100%;

@@ -1,5 +1,6 @@
 var Olds = {
 	'WW680+': null,
+	'WW600+': null,
 	'WH800+': null
 };
 
@@ -22,6 +23,14 @@ function Resized() {
 		}
 		Olds['WH800+'] = (window.innerHeight >= 800);
 	} else if (ActiveApp == 2) {
+		if (window.innerWidth < 600 && Olds['WW600+'] !== false) {
+			document.getElementById('top-menu2-title').style.display = 'none';
+		} else if (window.innerWidth >= 600 && Olds['WW600+'] !== true) {
+			document.getElementById('top-menu2-title').style.display = 'block';
+
+		}
+		Olds['WW600+'] = (window.innerWidth >= 600);
 
 	}
+
 }

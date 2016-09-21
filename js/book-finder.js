@@ -5,10 +5,12 @@ function SearchBook(e) {
 	let found = false;
 	for (let i = 0; i < Books.length; i++) {
 		for (let field in Books[i]) {
-			let result = Books[i][field].toString().indexOf(SearchedKey);
-			if (result != -1) {
-				FoundBooks.push(i);
-				break;
+			if (field != 'cover' && field != 'url') {
+				let result = Books[i][field].toString().indexOf(SearchedKey);
+				if (result != -1) {
+					FoundBooks.push(i);
+					break;
+				}
 			}
 		}
 	}
@@ -23,6 +25,7 @@ function SearchBook(e) {
 		});
 
 	} else {
+		DOMsearchresults.innerHTML = '';
 		for (let i = 0; i < FoundBooks.length; i++) {
 			/*<li class='search-results-item'>
 					<img src='http://edituraarslibri.ro/media/catalog/product/t/e/teste_de_evaluare_cls_2_1.jpg' height='100px' class='search-results-item-image'>
@@ -32,7 +35,8 @@ function SearchBook(e) {
 					</div>
 			</li>*/
 			let li = document.createElement('li');
-			li.setAttribute('class', 'search-results-item'); {
+			li.setAttribute('class', 'search-results-item');
+			li.setAttribute('book-id', FoundBooks[i]); {
 				let img = document.createElement('img');
 				img.setAttribute('src', Books[FoundBooks[i]].cover);
 				img.setAttribute('height', '100px');
@@ -51,6 +55,9 @@ function SearchBook(e) {
 				div.appendChild(p2);
 				li.appendChild(div);
 			}
+			li.addEventListener('click', function() {
+				OpenBook(this.getAttribute('book-id'));
+			});
 			DOMsearchresults.appendChild(li);
 		}
 		DOMsearchbar.blur();

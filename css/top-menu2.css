@@ -11,3 +11,13 @@
     display: inline-block;
     font-size: 36px;
 }
+
+#top-menu2-return {
+    display: inline-block;
+    float: left;
+    color: #FFFFFF;
+    background: #1a1b1c;
+    width: 128px;
+    font-size: 22px;
+    cursor: pointer;
+}

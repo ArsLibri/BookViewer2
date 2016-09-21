@@ -1,0 +1,25 @@
+#top-menu3 {
+    position: relative;
+    line-height: 64px;
+    color: #1a1b1c;
+    border-top: solid 3px #1a1b1c;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.top-menu3-item {
+    font-size: 36px;
+    display: inline-block;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.top-menu3-item-active {
+    border-bottom: solid 1px #a6b816 !important;
+    margin-bottom: 15px;
+}
+
+.top-menu3-item:hover {
+    border-bottom: solid 1px #1a1b1c;
+    margin-bottom: 15px;
+}
